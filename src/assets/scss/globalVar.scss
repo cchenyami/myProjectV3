@@ -1,0 +1,23 @@
+//globalVar.scss
+// 定义变量
+$bg-color: red;
+
+// 定义函数
+@mixin box-shadow($x, $y, $blur, $c){ 
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+
+// if判断
+@mixin set-color($val){
+  @if $val == 1{
+      background-color: red;
+  }@else if $val == 2{
+      background-color: blue;
+  }@else{
+      background-color: #fff;
+  }
+}
+
