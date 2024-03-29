@@ -59,7 +59,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "@/assets/scss/globalVar.scss";'
+        additionalData: '@import "@/assets/scss/index.scss";'
       }
     },
     postcss: postcssConfig
