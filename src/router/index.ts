@@ -1,10 +1,19 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
+import Layout from '@/layout/index.vue';
+import mainPage from './mainPage';
 export const routes = [
   {
-    path: '/',
-    component: () => import('@/views/main/index.vue'),
+    path: '/login',
+    component: () => import('@/views/login/index.vue'),
     hidden: true
+  },
+  {
+    path: '/',
+    component: Layout,
+    hidden: true,
+    redirect: '/main',
+    children: mainPage
   }
 ]
 

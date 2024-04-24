@@ -1,4 +1,5 @@
 //globalVar.scss
+@import "./theme/blue.scss";
 // 定义变量
 $bg-color: red;
 
@@ -25,4 +26,10 @@ $bg-color: red;
 body {
   padding: 0;
   margin: 0;
+}
+
+
+@mixin primary-font-color(){
+  background-color: $color-primary;
+  color: $color-color-primary;
 }
