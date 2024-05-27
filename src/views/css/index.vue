@@ -12,7 +12,20 @@
           {{ item }}
         </div>
     </div>
+
+    <h3>3、固定5个</h3>
+    <div class="css-box3">
+      <div v-for="item in [1,2,3,4,5,6,7,8]" :key="item" class="item">
+          {{ item }}
+        </div>
+    </div>
     
+    <h3>4、gird</h3>
+    <div class="css-box4">
+      <div v-for="item in [1,2,3,4,5,6,7,8]" :key="item" class="item">
+          {{ item }}
+        </div>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
@@ -58,6 +71,35 @@ onMounted(init)
   .item:last-child {
     background: red;
     text-align: right;
+  }
+}
+
+.css-box3 {
+  // width: auto;
+  // display: grid;
+  // grid-template-columns:  auto auto auto auto auto;
+  // gap:12px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    // @include primary-font-color();
+    // display: grid;
+    // align-items: center;
+    // justify-content: center;
+    // overflow: hidden;
+    width: calc(100%/5);
+
+    background-color: aquamarine;
+  }
+}
+
+.css-box4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .item {
+
   }
 }
 </style>
