@@ -5,7 +5,7 @@ import postcssConfig from './postcss.config';
 import viteImagemin from 'vite-plugin-imagemin';
 import { visualizer } from 'rollup-plugin-visualizer'
 import viteCompression from 'vite-plugin-compression'
-
+import legacy from '@vitejs/plugin-legacy'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -45,7 +45,10 @@ export default defineConfig({
       ext: '.gz',
       deleteOriginFile: true // 源文件压缩后是否删除(我为了看压缩后的效果，先选择了true)
     }),
-    visualizer({ open: true })
+    visualizer({ open: true }),
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
   ],
   resolve: {
     alias: {

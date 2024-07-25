@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
+    "@vitejs/plugin-legacy": "^5.4.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "rollup-plugin-visualizer": "^5.12.0",
