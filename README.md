@@ -1,7 +1,6 @@
 # 
 
 ```
-
 Vue 3 + TypeScript + Vite + Vue Router + Sass + Axios
 
 autoprefixer: autoprefixer自动添加css 前缀解决不同的浏览器的兼容问题

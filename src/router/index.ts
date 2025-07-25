@@ -5,7 +5,7 @@ import mainPage from './mainPage';
 export const routes = [
   {
     path: '/login',
-    component: () => import('@/views/login/index.vue'),
+    component: () => import('@/pages/login/index.vue'),
     hidden: true
   },
   {
